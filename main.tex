@@ -1,17 +1,124 @@
-\documentclass{article}
+\documentclass[12pt, a4paper]{report}
+
+% --- KODOWANIE I JĘZYK ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 
-\title{Moja Praca Magisterska}
-\author{Twoje Imię i Nazwisko}
-\date{\today}
+% --- GEOMETRIA (Marginesy - standardowe dla prac dyplomowych) ---
+\usepackage[margin=2.5cm]{geometry}
+
+% --- CZCIONKA (Times New Roman) ---
+\usepackage{newtxtext,newtxmath}
+
+% --- INTERLINIA (1.5 wiersza) ---
+\usepackage{setspace}
+\onehalfspacing
+
+% --- WCIĘCIE PIERWSZEGO AKAPITU (0.75 cm) ---
+\usepackage{indentfirst}
+\setlength{\parindent}{0.75cm}
+
+% --- FORMATOWANIE NAGŁÓWKÓW ROZDZIAŁÓW I PODROZDZIAŁÓW ---
+\usepackage{titlesec}
+
+% Tytuł rozdziału: Wielkie litery, pogrubiona, 14 pkt, wyrównany do lewej
+% Odstęp przed: 12 pkt, po: 6 pkt
+\titleformat{\section}
+  {\normalfont\large\bfseries} % W LaTeX 'large' odpowiada ~14pt w tym pakiecie
+  {\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Tytuł podrozdziału: Kapitaliki, pogrubiona, 12 pkt
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\scshape}
+  {\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{6pt}
+
+% --- FORMATOWANIE NAGŁÓWKÓW ROZDZIAŁÓW ---
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+  {\thechapter.\ } {0em} {}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+% --- Pakiety do rysunków i tabel ---
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{array}
+% --- INTERAKTYWNE LINKI (PDF) ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,      % Koloruje tekst linków zamiast tworzyć ramki
+    linkcolor=black,      % Kolor odnośników wewnątrz dokumentu (np. spis treści, numery stron) - tutaj ustawiony na czarny, żeby nie wyróżniały się na wydruku
+    citecolor=black,      % Kolor cytowań
+    urlcolor=black        % Kolor linków internetowych
+}
 
 \begin{document}
+\makeatletter
+\renewcommand{\l@chapter}{\@dottedtocline{0}{0em}{1.5em}}
+\makeatother
 
-\maketitle
+% --- STRONA TYTUŁOWA (Wzorzec z dokumentu) ---
+\begin{titlepage}
+    \centering
+    \includegraphics[width=3.86cm, height=5.19cm]{Obrazy/Polsl_Logo.png}\par
+    \vspace{2cm}
+    {\Large\bfseries PRACA DYPLOMOWA}\par
+    \vspace{2.5cm}
+    {\large Analiza odporności algorytmów optymalizacji energetycznej napędu elektrycznego na cyberataki typu manipulacji danymi}\par
+    \vspace{1cm}
+    
+    {\large\bfseries Dawid Saletnik}\par
+    {\normalsize\bfseries Nr albumu 300715}\par
+    \vspace{1cm}
 
-\section{Wstęp}
-To jest test mojego środowiska LaTeX w VS Code. Wszystko działa poprawnie!
+    {\large\bfseries Kierunek: }
+    {\large Automatyka i Informatyka Przemysłowa}\par
+    \vspace{2cm}
+    
+    {\large\bfseries PROWADZĄCY PRACĘ}\par
+    {\normalsize\bfseries Dr. inż. Andrzej Nowrot}\par
+    \vspace{0.5cm}
+
+    {\normalsize\bfseries KATEDRA ELEKTROTECHNIKI I AUTOMATYKI PRZEMYSŁOWEJ}\par
+    \vspace{2cm}
+    \vfill
+    
+    {\large GLIWICE 2026}\par
+\end{titlepage}
+
+\newpage
+
+\section*{Tytuł pracy:} \noindent Analiza odporności algorytmów optymalizacji energetycznej napędu
+elektrycznego na cyberataki typu manipulacji danymi
+
+\section*{Streszczenie:} \noindent W kilku zdaniach opisać skrótowo jaki był cel i zakres pracy, zastosowane metody realizacji oraz najważniejsze wyniki i wnioski.danych.
+
+\section*{Słowa kluczowe:} \noindent 3-5 słów kluczowych (preferowana forma jednowyrazowa lub dwuwyrazowa), które najlepiej charakteryzują treść pracy i ułatwiają jej wyszukanie w bazie danych.
+
+\section*{Thesis title:} \noindent Analysis of the resistance of energy optimization algorithms of electric drives
+to cyberattacks of data manipulation
+
+\section*{Abstract:} \noindent W kilku zdaniach opisać skrótowo jaki był cel i zakres pracy, zastosowane metody realizacji oraz najważniejsze wyniki i wnioski.danych.
+
+\section*{Keywords:} \noindent 3-5 słów kluczowych (preferowana forma jednowyrazowa lub dwuwyrazowa), które najlepiej charakteryzują treść pracy i ułatwiają jej wyszukanie w bazie danych.
+
+
+% --- SPIS TREŚCI ---
+\newpage
+\tableofcontents
+\newpage
+
+% --- WŁAŚCIWA TREŚĆ PRACY ---
+\input{0_Wykaz_oznaczen_i_symboli.tex}
+\input{1_Wstep.tex}
+\input{2_Teoria.tex}
+\input{3_Srodowisko_badawcze.tex}
+\input{4_Badania.tex}
+\input{5_Podsumowanie.tex}
+\input{6_Literatura.tex}
+\input{7_Spis_tabel.tex}
+\input{8_Spis_rysunkow.tex}
 
 \end{document}

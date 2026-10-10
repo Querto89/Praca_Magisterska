@@ -1,0 +1,133 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{grzesiak2016sterowanie}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=f07ff218a7211ddc589c21ea61959fca}{%
+           family={Grzesiak},
+           familyi={G\bibinitperiod},
+           given={Lech},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ddfb7ff40a43573c1398e3cd3270b23c}{%
+           family={Ufnalski},
+           familyi={U\bibinitperiod},
+           given={Bar{ł}omiej},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bf1ab4b96635bd26f376ef88f2c9b93d}{%
+           family={Kaszewski},
+           familyi={K\bibinitperiod},
+           given={Arkadiusz},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wydawnictwo Naukowe PWN}%
+      }
+      \strng{namehash}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{fullhash}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{fullhashraw}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{bibnamehash}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{authorbibnamehash}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{authornamehash}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{authorfullhash}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \strng{authorfullhashraw}{64eb4f0a6f46ceadefe92db9f4c93606}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sterowanie napędów elektrycznych: analiza, modelowanie, projektowanie}
+      \field{year}{2016}
+    \endentry
+    \entry{krishnan2001electric}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=1d8bf1a1176c59026be170ccc5a2c5e0}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Ramu},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{fullhash}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{fullhashraw}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{bibnamehash}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{authorbibnamehash}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{authornamehash}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{authorfullhash}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \strng{authorfullhashraw}{1d8bf1a1176c59026be170ccc5a2c5e0}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Electric Motor Drives: Modeling, Analysis, and Control}
+      \field{year}{2001}
+    \endentry
+    \entry{lastowiecki2011napkedy}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=0c300c5c8d114e14b6550f82242e04c2}{%
+           family={{Ł}astowiecki},
+           familyi={Ł\bibinitperiod},
+           given={Józef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Samodzielna Sekcja" Wydawnictwo Politechniki Świętokrzyskiej"}%
+      }
+      \strng{namehash}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{fullhash}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{fullhashraw}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{bibnamehash}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{authorbibnamehash}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{authornamehash}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{authorfullhash}{0c300c5c8d114e14b6550f82242e04c2}
+      \strng{authorfullhashraw}{0c300c5c8d114e14b6550f82242e04c2}
+      \field{sortinit}{Ł}
+      \field{sortinithash}{942850f937bf7915dc64193b62cb82c1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Napędy elektryczne w automatyce i robotyce}
+      \field{year}{2011}
+    \endentry
+    \entry{IEC60034-1_2022}{report}{}{}
+      \list{location}{1}{%
+        {Geneva, Switzerland}%
+      }
+      \list{organization}{1}{%
+        {International Electrotechnical Commission}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{edition}{14}
+      \field{isbn}{978-2-8322-4014-4}
+      \field{month}{2}
+      \field{number}{IEC 60034-1:2022}
+      \field{title}{Rotating Electrical Machines -- Part 1: Rating and Performance}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

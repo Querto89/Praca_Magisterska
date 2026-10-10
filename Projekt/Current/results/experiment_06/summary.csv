@@ -1,0 +1,4 @@
+Scenario,AttackStart_s,AttackAmplitude_rad_s,Threshold_rad_s,Detected,FirstAlarm_s,DetectionDelay_s,FalseAlarmBeforeAttack,MaxResidual_rad_s,RMSEResidual_rad_s,MaxInjectedError_rad_s
+none,NaN,0,1,0,NaN,NaN,0,0.833018797388495,0.133740368850461,0
+bias,1,2,1,1,1.00003539476326,3.5394763259422e-05,0,2.09777465677523,1.41890734467837,2
+ramp,1,2,1,1,1.5000353947632,0.500035394763204,0,1.99999999458633,0.827546922429307,2

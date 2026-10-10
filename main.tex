@@ -25,25 +25,36 @@
 %--- TWORZENIE LIST
 \usepackage{enumitem}
 
+%--- TWORZENIE BIBLIOGRAFI
+\usepackage[polish]{babel}
+\usepackage{csquotes} % <-- Dodaj ten pakiet tutaj
+\usepackage[backend=biber, style=numeric]{biblatex}
+\addbibresource{bibliografia.bib}
 
 % Tytuł rozdziału: Wielkie litery, pogrubiona, 14 pkt, wyrównany do lewej
+% --- FORMATOWANIE NAGŁÓWKÓW ROZDZIAŁÓW ---
+% Tytuł podrozdziału: Kapitaliki, pogrubiona, 14 pkt
 % Odstęp przed: 12 pkt, po: 6 pkt
-\titleformat{\section}
+\titleformat{\chapter}[hang]
   {\normalfont\large\bfseries} % W LaTeX 'large' odpowiada ~14pt w tym pakiecie
-  {\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{12pt}{6pt}
+  {\thechapter.\ } {1em} {}
+\titlespacing*{\chapter}{0pt}{12pt}{6pt}
 
+% --- FORMATOWANIE NAGŁÓWKÓW PODROZDZIAŁÓW ---
 % Tytuł podrozdziału: Kapitaliki, pogrubiona, 12 pkt
+% Odstęp przed: 6 pkt, po: 6 pkt
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries\scshape} % W LaTeX 'normalsize' odpowiada ~12pt w tym pakiecie
+  {\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{6pt}{6pt}
+
+% --- FORMATOWANIE NAGŁÓWKÓW PODPODROZDZIAŁÓW ---
+% Tytuł podpodrozdziału: Kapitaliki, pogrubiona, 12 pkt
+% Odstęp przed: 6 pkt, po: 6 pkt
 \titleformat{\subsection}
   {\normalfont\normalsize\bfseries\scshape}
   {\thesubsection}{1em}{}
 \titlespacing*{\subsection}{0pt}{6pt}{6pt}
-
-% --- FORMATOWANIE NAGŁÓWKÓW ROZDZIAŁÓW ---
-\titleformat{\chapter}[hang]
-  {\normalfont\huge\bfseries}
-  {\thechapter.\ } {0em} {}
-\titlespacing*{\chapter}{0pt}{0pt}{20pt}
 
 % --- Pakiety do rysunków i tabel ---
 \usepackage{graphicx}
@@ -121,7 +132,7 @@ to cyberattacks of data manipulation
 \input{3_Srodowisko_badawcze.tex}
 \input{4_Badania.tex}
 \input{5_Podsumowanie.tex}
-\input{6_Literatura.tex}
+\printbibliography[heading=bibintoc, title={LITERATURA}]
 \input{7_Spis_tabel.tex}
 \input{8_Spis_rysunkow.tex}
 
